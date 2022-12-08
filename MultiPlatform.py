@@ -3,7 +3,7 @@ from sys import platform
 class PlatformClass:
     def __init__(self,*args, **kwargs):
         self.__platform__ = platform
-        self.__uni_init__()
+        self.__uni_init__(*args, **kwargs)
         if platform.startswith("win32"):
             self.__win32_init__(*args, **kwargs)
             self.__add_func__ = self.__win32_add__
