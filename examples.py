@@ -40,8 +40,8 @@ class ComputerPerson(PlatformClass):
 
 
 if __name__ == "__main__":
-    #clearscreen = DefineClearScreen()
-    #clearscreen()
+    clearscreen = DefineClearScreen()
+    clearscreen()
 
     person = ComputerPerson("isaac")
     print(str(person))
